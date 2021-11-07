@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>PTB | Panji Team Bots</title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <style>
+    .card {
+      border:none;
+      padding: 10px 50px;
+    }
+
+    .card::after {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .card:hover {
+
+
+      transform: scale(1.02, 1.02);
+      -webkit-transform: scale(1.02, 1.02);
+      backface-visibility: hidden; 
+      will-change: transform;
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.75) !important;
+    }
+
+    .card:hover::after {
+      opacity: 1;
+    }
+
+    .card:hover .btn-outline-primary{
+      color:white;
+      background:#850101;
+    }
+
+  </style>
+
+</head>
+<body>
+
+    <div class="container-fixed">
+      <header class="d-flex justify-content-center py-3 bg-dark navbar-dark fixed-top">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="album.html" class="nav-link">Album</a></li>
+          <li type="button"><a href="contact.html" class="btn btn-outline-danger active" aria-current="page">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </header>
+    </div>
+
+  <div class="container-fluid mt-5" style="background: linear-gradient(90deg, #4b0202 0%, #e76d0a 100%);">
+    <div class="container p-5">
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-white">Owner</strong>
+                  <h3 class="mb-0">PTB-Ragil</h3>
+                  <p class="card-text mb-auto">Pemilik panji team bots.</p>
+                  <a href="https://line.me/ti/p/~ragil_0578" class="stretched-link">Send message</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <image class="bd-placeholder-img" width="230" height="250" src="img/ragil.jpg" role="img" aria-label="image" preserveAspectRatio="xMidYMid slice" focusable="false"></image>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success">Creator</strong>
+                  <h3 class="mb-0">PTB-Opick</h3>
+                  <p class="mb-auto">Creator panji team bots.</p>
+                  <a href="https://line.me/ti/p/~opick-24" class="stretched-link">Send message</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <image class="bd-placeholder-img" width="250" height="250" src="img/opick.jpg" role="img" aria-label="image" preserveAspectRatio="xMidYMid slice" focusable="false"></image>
+                </div>
+              </div>
+            </div>
+          </div>   
+      </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                    <textarea class="form-control w-100 bg-dark" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder = 'Enter Message'></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control bg-dark" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your name'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control bg-dark" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control bg-dark" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder = 'Enter Subject'>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm btn_1 bg-dark text-white">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    <footer id="footer" class="footer-1">
+      <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+      <div class="row">
+      <div class="footer-copyright">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12 text-center text-white">
+      <p>Copyright © 2021 PTB Corp. All rights reserved.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/da0ae6e7cd.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
